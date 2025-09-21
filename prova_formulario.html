@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Formulário</title>
+</head>
+<body>
+    <h1 style="font-size: 25px;">FORMULÁRIO DE CADASTRO</h1>
+    <form action="/enviar" method="post"
+    style= "border:1px solid black; 
+    width: fit-content;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(215, 194, 235);">
+    <!--
+        - campo de nome: campo de entrada de texto (<input type="text">) com um rótulo (<label>) para o nome do usuário
+    -->
+        <label for="nome"><strong>NOME</strong></label><br>
+        <input type="text" id="nome" name="nome" style="width: 300px;">
+        <br>
+        <hr>
+    <!--
+        - campo de email: campo de entrada de email (<input type="email">) com um rótulo.
+    -->
+        <label for="email"><strong>EMAIL</strong></label><br>
+        <input type="email" id="email" name="email" style="width: 300px;">
+        <br>
+        <hr>
+    <!--
+        - campo de senha: campo de entrada de senha (<input type="password">) com um rótulo.
+    -->
+        <label for="senha"><strong>SENHA</strong></label><br>
+        <input type="password" id="senha" name="senha" style="width: 300px;">
+        <br>
+        <hr>
+    <!--
+        - campo de seleção (<select>): lista suspensa com várias opções (<option>) para que o usuário selecione o país.
+    -->
+        <label for="pais"><strong>PAÍS</strong></label><br>
+        <select id="pais" name="pais" style="width: 300px; padding:5px;">
+            <option value="brasil">Brasil</option> 
+            <option value="eua">Estados Unidos</option> 
+            <option value="uk">Reino Unido</option> 
+        </select>
+        <br>
+        <hr>
+    <!--
+        - campo de mensagem: área de texto (<textarea>) para que o usuário possa inserir uma mensagem ou descrição.
+    -->
+        <label for="mensagem"><strong>MENSAGEM</strong></label><br>
+        <textarea id="mensagem" name="mensagem" style="width: 300px; height:100px;"></textarea>
+        <br>
+        <br>
+    <!--
+        - botões: para enviar o formulário (<button type="submit">) e outro para limpar os campos (<button type="reset">).
+    -->
+        <button type="submit" style="width: 150px; 
+        padding: 5px; 
+        background-color: #5a9851; 
+        color: white;">
+        <strong>ENVIAR</strong>
+        </button>
+        <button type="reset" style="width: 150px; 
+        padding: 5px;
+        background-color: #5a9851; 
+        color: white;">
+        <strong>REDEFINIR</strong>
+    </button>
+    </form>
+</body>
+</html>

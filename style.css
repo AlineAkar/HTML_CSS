@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color:#CB8FA4;
+    margin: 20px;
+    padding: 0;
+    height: 100%;
+    width: 90%;
+}
+
+header {
+    font-size: 20px;
+    background-color:  #E1DBE1;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+section {
+    font-size: 20px;
+    background-color:  #E1DBE1;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+aside {
+    font-size: 20px;
+    background-color:  #E1DBE1;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 80px;
+    color:#5647A8;
+}
+
+h2 {
+    font-size: 40px;
+    color:#5647A8;
+}
+
+h3 {
+    font-size: 25px;
+    color:#5647A8;
+}
+
+button {
+    background-color: #A5A8E1; 
+    color: #000; 
+    border: none; 
+    padding: 15px 25px; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}

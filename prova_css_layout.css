@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color:#CB8FA4;
+    margin: 20px;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    background-color:  #E1DBE1;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+#pai {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#pai .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color:  #E1DBE1;
+    flex: 1 1 380px;
+}
+
+#pai .container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#pai .container ul,
+#pai .container ol {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    min-height: 80px;
+    width: 300px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    background-color:  #E1DBE1;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+
+}
+
+footer {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 80px;
+    color:#5647A8;
+}
+
+h2 {
+    font-size: 40px;
+    color:#5647A8;
+}
+
+h3 {
+    font-size: 25px;
+    color:#5647A8;
+}
+
+button {
+    background-color: #A5A8E1; 
+    color: #000; 
+    border: none; 
+    padding: 15px 25px; 
+    border-radius: 8px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}

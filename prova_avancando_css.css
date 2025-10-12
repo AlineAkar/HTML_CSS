@@ -1,0 +1,171 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #cb8fa4;
+  margin: 20px;
+  padding: 0;
+  height: 100%;
+  width: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  background-color: #e1dbe1;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#pai {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#pai .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  margin: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #e1dbe1;
+  flex: 1 1 380px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#pai .container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 40px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#pai .container ul,
+#pai .container ol {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  min-height: 80px;
+  width: 300px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 80px;
+  color: #5647a8;
+}
+
+h2 {
+  font-size: 40px;
+  color: #5647a8;
+}
+
+h3 {
+  font-size: 25px;
+  color: #5647a8;
+}
+
+button {
+  background-color: #a5a8e1;
+  color: #000;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+1- Estilos Responsivos com Media Queries:
+Use Media Queries para garantir que o formulário se ajuste bem em diferentes tamanhos de tela (móvel, tablet, desktop).
+OK Em telas menores, o formulário deve ocupar toda a largura da tela
+OK Enquanto em telas maiores deve ser centralizado com uma largura fixa.
+2- Uso de Pseudo-elementos:
+OK Use o pseudo-elemento ::before para adicionar ícones decorativos antes dos campos "Nome de Usuário" e "Senha".
+OK Use o pseudo-elemento ::after para adicionar um efeito visual nos botões quando o mouse passar sobre eles (hover).
+3- Estilização Adicional:
+OK Aplique bordas arredondadas aos campos e botões.
+OK Utilize sombras sutis para dar profundidade ao formulário. 
+ */
+
+@media (max-width: 780px) {
+  #formulario {
+    width: 100%;
+  }
+}
+
+#formulario {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: #e1dbe1;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+#formulario .campos {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 12px;
+  font-size: 15px;
+}
+
+#label_nome::before {
+  content: "👤";
+  margin-right: 6px;
+}
+
+#label_email::before {
+  content: "📧";
+  margin-right: 6px;
+}
+
+#label_senha::before {
+  content: "🔒";
+  margin-right: 6px;
+}
+
+#button_submit:hover::after {
+  content: "📤";
+  margin-left: 6px;
+}
+
+#button_reset:hover::after {
+  content: "🔄";
+  margin-left: 6px;
+}

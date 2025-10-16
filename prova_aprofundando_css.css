@@ -1,0 +1,239 @@
+/* 
+1- Defina Variáveis para Tamanhos:
+- Crie variáveis CSS para armazenar os tamanhos de fontes e espaçamentos em diferentes tamanhos de tela (pequena, média e grande).
+- Defina essas variáveis no seletor :root.
+2- Aplique as Variáveis:
+- Utilize as variáveis CSS para definir o tamanho da fonte dos cabeçalhos e o espaçamento entre elementos.
+- Modifique as variáveis em um @media query para ajustar o layout em diferentes tamanhos de tela. 
+*/
+
+:root {
+  /* Tamanhos de fonte */
+  --font-title-small: 40px;
+  --font-paragraph-small: 16px;
+
+  --font-title-medium: 60px;
+  --font-paragraph-medium: 18px;
+
+  --font-title-large: 80px;
+  --font-paragraph-large: 20px;
+
+  /* Espaçamentos */
+  --padding-small: 0px 20px 20px 20px;
+  --padding-medium: 0px 30px 30px 30px;
+  --padding-large: 0px 40px 40px 40px;
+}
+
+/* Pequena */
+@media (max-width: 600px) {
+  #formulario {
+    width: 100%;
+  }
+  header {
+    font-size: var(--font-paragraph-small);
+    padding: var(--padding-small);
+  }
+  #pai .container {
+    font-size: var(--font-paragraph-small);
+  }
+  footer {
+    font-size: var(--font-paragraph-small);
+    padding: var(--padding-small);
+  }
+  h1 {
+    font-size: var(--font-title-small);
+  }
+  h2 {
+    font-size: var(--font-title-small);
+  }
+  h3 {
+    font-size: var(--font-paragraph-small);
+  }
+}
+
+/* Média */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    font-size: var(--font-paragraph-medium);
+    padding: var(--padding-medium);
+  }
+  #pai .container {
+    font-size: var(--font-paragraph-medium);
+  }
+  footer {
+    font-size: var(--font-paragraph-medium);
+    padding: var(--padding-medium);
+  }
+  h1 {
+    font-size: var(--font-title-medium);
+  }
+  h2 {
+    font-size: var(--font-title-small);
+  }
+  h3 {
+    font-size: var(--font-paragraph-medium);
+  }
+}
+
+/* Grande */
+@media (min-width: 1025px) {
+  header {
+    font-size: var(--font-paragraph-large);
+    padding: var(--padding-large);
+  }
+  #pai .container {
+    font-size: var(--font-paragraph-large);
+  }
+  footer {
+    font-size: var(--font-paragraph-large);
+    padding: var(--padding-large);
+  }
+  h1 {
+    font-size: var(--font-title-large);
+  }
+  h2 {
+    font-size: var(--font-title-small);
+  }
+}
+h3 {
+  font-size: var(--font-paragraph-large);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #cb8fa4;
+  margin: 20px;
+  padding: 0;
+  height: 100%;
+  width: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e1dbe1;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#pai {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#pai .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  margin: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #e1dbe1;
+  flex: 1 1 380px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#pai .container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 40px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#pai .container ul,
+#pai .container ol {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  min-height: 80px;
+  width: 300px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #5647a8;
+}
+
+h2 {
+  color: #5647a8;
+}
+
+h3 {
+  color: #5647a8;
+}
+
+button {
+  background-color: #a5a8e1;
+  color: #000;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+#formulario {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: #e1dbe1;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+#formulario .campos {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 12px;
+  font-size: 15px;
+}
+
+#label_nome::before {
+  content: "👤";
+  margin-right: 6px;
+}
+
+#label_email::before {
+  content: "📧";
+  margin-right: 6px;
+}
+
+#label_senha::before {
+  content: "🔒";
+  margin-right: 6px;
+}
+
+#button_submit:hover::after {
+  content: "📤";
+  margin-left: 6px;
+}
+
+#button_reset:hover::after {
+  content: "🔄";
+  margin-left: 6px;
+}

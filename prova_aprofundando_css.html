@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prova Avançando CSS</title>
+    <link rel="stylesheet" href="prova_aprofundando_css.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Blog de Receitas</h1>
+      <p>
+        <i>Da cozinha para o coração!</i>
+      </p>
+      <nav>
+        <b>RECEITAS</b><br />
+        <a href="#omelete">Omelete de queijo</a><br />
+        <a href="#salada">Salada de tomate</a><br />
+        <a href="#bolo">Bolo de caneca</a><br />
+      </nav>
+    </header>
+    <div id="pai">
+      <section class="container">
+        <h2 id="omelete">Omelete de queijo</h2>
+        <img
+          src="omelete.jpg"
+          alt="omelete de queijo"
+          width="300px"
+          height="400px"
+          style="border-radius: 10px"
+        />
+        <p><b>Ingredientes:</b><br /></p>
+        <ul>
+          <li>02 ovos</li>
+          <li>Sal e pimenta</li>
+          <li>01 colher de queijo ralado</li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <p><b>Modo de preparo:</b><br /></p>
+        <ol>
+          <li>Bata os ovos com sal e pimenta.</li>
+          <li>Aqueça uma frigideira antiaderente e despeje os ovos batidos.</li>
+          <li>
+            Cozinhe em fogo médio até firmar. Adicione queijo por cima e dobre
+            ao meio.
+          </li>
+          <li>Sirva quente.</li>
+        </ol>
+        <a href="https://www.youtube.com/shorts/uHvBrW8N-pA" target="_blank">
+          <button>VER VÍDEO</button>
+        </a>
+      </section>
+      <section class="container">
+        <h2 id="salada">Salada de tomate</h2>
+        <img
+          src="salada.jpg"
+          alt="salada de tomate"
+          width="300px"
+          height="400px"
+          style="border-radius: 10px"
+        />
+        <p><b>Ingredientes:</b><br /></p>
+        <ul>
+          <li>01 tomate</li>
+          <li>01 pepino</li>
+          <li>Azeite, sal e limão</li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <p><b>Modo de preparo:</b><br /></p>
+        <ol>
+          <li>Corte o tomate e o pepino em cubos.</li>
+          <li>Misture em uma tigela e tempere com azeite, sal e limão.</li>
+          <li>Sirva imediatamente ou leve à geladeira por alguns minutos.</li>
+        </ol>
+        <br />
+        <br />
+        <a href="https://www.youtube.com/shorts/KnkKmg6Q6s4" target="_blank">
+          <button>VER VÍDEO</button>
+        </a>
+      </section>
+      <section class="container">
+        <h2 id="bolo">Bolo de chocolate</h2>
+        <img
+          src="bolo.jpg"
+          alt="bolo de chocolate"
+          width="300px"
+          height="400px"
+          style="border-radius: 10px"
+        />
+        <p><b>Ingredientes:</b><br /></p>
+        <ul>
+          <li>04 colheres de farinha</li>
+          <li>04 colheres de açúcar</li>
+          <li>01 ovo</li>
+          <li>03 colheres de azeite</li>
+          <li>01 colher de óleo</li>
+          <li>01 colher de chocolate em pó</li>
+        </ul>
+        <p><b>Modo de preparo:</b><br /></p>
+        <ol>
+          <li>Misture os ingredientes secos e líquidos em uma tigela.</li>
+          <li>Asse o bolo, colocando a massa em uma forma untada.</li>
+          <li>Espere esfriar um pouco e sirva.</li>
+        </ol>
+        <br />
+        <br />
+        <a href="https://www.youtube.com/shorts/3m8bDcIByFg" target="_blank">
+          <button>VER VÍDEO</button>
+        </a>
+      </section>
+    </div>
+    <section id="formulario">
+      <h2>Receba receitas fresquinhas</h2>
+      <p>
+        Cadastre-se e seja o primeiro a receber receitas quentinhas, direto do
+        nosso forno para o seu e-mail!
+      </p>
+      <form action="#" method="post">
+        <div class="campos">
+          <label id="label_nome" for="username">Nome:</label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <div class="campos">
+          <label id="label_senha" for="password">Senha:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="campos">
+          <label id="label_email" for="Email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="campos">
+          <button id="button_submit" type="submit">ENVIAR</button>
+          <button id="button_reset" type="reset">LIMPAR</button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p>© 2025 - Feito por Aline | Email: aline@gmail.com</p>
+    </footer>
+  </body>
+</html>

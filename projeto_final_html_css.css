@@ -1,0 +1,130 @@
+/* 
+1- Utilize Flexbox ou Grid para organizar o layout da página.
+2- Aplique estilos personalizados para destacar seções importantes, como projetos e habilidades.
+3- Implemente Media Queries para garantir que o portfólio seja responsivo e adaptável a diferentes tamanhos de tela.
+*/
+
+/*
+PALETA
+Azul marinho - 26294A
+Azul petróleo - 3D6273
+Azul claro - B5D6DB 
+Creme - F3DEDA
+Vermelho - C31C25
+*/
+
+body {
+  display: flex;
+  font-size: 17px;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+h3 {
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+#introducao p {
+  color: white;
+}
+
+p {
+  line-height: 1.5;
+}
+/* PARTE DA ESQUERDA*/
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #b5d6db;
+  padding: 16px;
+  width: 30%;
+}
+#redes {
+  display: flex;
+  flex-direction: column;
+}
+
+#Linkedin {
+  display: flex;
+  padding: 4px;
+  font-size: 20px;
+}
+#Instagram {
+  display: flex;
+  padding: 4px;
+  font-size: 20px;
+}
+#email {
+  display: flex;
+  padding: 4px;
+  font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer; 
+}
+/* PARTE DA DIREITA*/
+#mae_introducao_experiencia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#introducao {
+  background-color: #3d6273;
+  padding: 40px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+#experiencia {
+  background-color: #f3deda;
+  padding: 16px;
+  padding: 40px;
+}
+
+@media (max-width: 1024px) {
+    body {
+      flex-direction: column; 
+    }
+  
+    #sidebar {
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      padding: 16px 8px;
+    }
+  
+    #mae_introducao_experiencia {
+      width: 100%;
+    }
+  
+    #introducao {
+      padding: 32px;
+    }
+  
+    #experiencia {
+      padding: 32px;
+    }
+  }
